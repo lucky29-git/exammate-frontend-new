@@ -1,0 +1,102 @@
+/*WELCOME GREET STYLING*/
+.welcomeGreet{
+    height: 80vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-image: url('/img/uitRgpv.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .welcomeGreetContent{
+    place-items: center;
+    text-align: center;
+    height: 30%;
+    width: 50%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    background: #45208935; 
+    backdrop-filter: blur(10px); /* Adjust blur intensity */
+    padding: 20px;
+    border-radius: 10px; /* Optional: for smooth edges */
+    color: #6F42C1; /* Ensures text is visible */
+  }
+
+  .welcomeGreetContent h1{
+    color: #200b46;
+  }
+
+  .aboutWebsite{
+    height: auto;
+    display: flex;
+    /* flex-direction: column; */
+    padding: 3rem;
+    padding-top: 4rem;
+    gap: 2rem;
+  }
+
+.leftSide h1{
+    text-shadow: 1px 1px 3px #200b46;
+}
+
+.rightSide ul{
+    list-style: none;
+    padding: 0;
+}
+
+.rightSide ul li{
+    padding: 10px 0 0 28px;
+    position: relative;
+}
+
+.ourTeam {
+    max-height: 200vh;
+    padding-bottom: 2rem;
+    background-color: #6F42C1;
+  }
+  
+  .TeamHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 2rem;
+    background-color: #6F42C1;
+  }
+  
+  .TeamHeading h1 {
+    text-shadow: 1px 1px 3px #200b46;
+    font-size: 2.5rem;
+  }
+  
+  .TeamHeading p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #c7aff6;
+    padding: 10px;
+  }
+  
+  .teamMembers {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center the cards horizontally */
+    background-color: #6F42C1;
+  }
+  
+  .col-lg-3 {
+    width: calc(50% - 20px); /* Two cards in a row for large screens */
+    margin: 10px; /* Add some margin between cards */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .col-lg-3 {
+      width: calc(50% - 20px); /* Two cards in a row for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .col-lg-3 {
+      width: calc(100% - 20px); /* One card per row for small screens */
+    }
+  }

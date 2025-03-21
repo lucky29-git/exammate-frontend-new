@@ -1,0 +1,46 @@
+.card {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px; /* 3D effect */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card-front {
+    background-color: #6F42C1; /* Purple Background */
+    color: white;
+  }
+  
+  .card-back {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 10px;
+  }
+  

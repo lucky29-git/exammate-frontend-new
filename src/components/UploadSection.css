@@ -1,0 +1,84 @@
+.uploadSection{
+    background-color: #6F42C1;
+    padding: 2rem;
+}
+
+.uploadSection .heading{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    height: 15vh;
+}
+
+.uploadSection .heading h1{
+    font-size: 1.9rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    place-items: left;
+   
+}
+
+.uploadSection .heading img{
+    height: 15vh;
+}
+
+.upload{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload img{
+    height: 40vh;
+    width: 25vw;
+}
+
+.uploadContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.upload .uploadContent img{
+    height: 10vh;
+}
+
+.uploadContent h4{
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    position: relative; /* Positioning context for the overlay text */
+    display: inline-block; /* Keeps the image and text aligned properly */
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+
+  
+  .button img {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below the image */
+    transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+  }
+
+  .button:hover img {
+    transform: scale(1.1); /* Zoom in the image on hover */
+  }
+  
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust text size */
+    font-weight: bold; /* Optional bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow for better visibility */
+  }

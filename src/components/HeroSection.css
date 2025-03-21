@@ -1,0 +1,38 @@
+.heroSection{
+    background-color: #decffa;
+    padding: 1rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    margin: 0;
+    padding: 0.5rem;
+    padding-top: 2rem;
+}
+
+.heading h4{
+    padding: 0;
+    margin: 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to move to next line */
+    gap: 20px;
+    justify-content: center;
+    /* margin-top: 50px; */
+  }
+  
+  .cards-container > div {
+    width: calc(25% - 20px); /* 4 cards per row, minus gap */
+    box-sizing: border-box;
+  }
+  
+
+

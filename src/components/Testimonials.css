@@ -1,0 +1,53 @@
+.testimonials{
+    background-color: #e8e0f8;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    
+}
+
+.testimonials .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials .head h2{
+    margin: 0;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 4vw; /* Responsive gap between cards */
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  }
+  
+  .testiCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1vw; /* Rounded corners */
+    padding: 2vh 3vw;
+    max-width: 20vw; /* Responsive width */
+    width: 100%;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testiCard p {
+    font-style: italic;
+    color: #555;
+    font-size: 1.5vw; /* Responsive font size */
+  }
+  
+  .testiCard h4 {
+    margin-top: 2vh; /* Responsive margin */
+    font-weight: bold;
+    color: #333;
+    font-size: 2vw; /* Responsive font size */
+  }
+  
+  .testiCard:hover {
+    transform: translateY(-1vh); /* Lift the card slightly on hover */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
+  }
