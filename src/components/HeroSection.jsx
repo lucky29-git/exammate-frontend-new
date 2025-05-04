@@ -21,9 +21,6 @@ export const HeroSection = () => {
       <Cards shortForm="CE" fullForm="Civil Engineering" bgImage="/img/ce.jpeg" bgColor="#795548" to="http://localhost:5174/dashboard"/>
       <Cards shortForm="PCT" fullForm="PetroChemical Engineering" bgImage="/img/pct.jpeg" bgColor="#DC3545" to="/http://localhost:5174/dashboard"/>
       <Cards shortForm="AU" fullForm="Automobile Engineering" bgImage="/img/au.jpg" bgColor="#343A40" to="http://localhost:5174/dashboard"/>
-
-
-
     </div>
 
     </section>
