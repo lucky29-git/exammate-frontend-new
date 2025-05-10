@@ -1,9 +1,16 @@
+// { value: '1', label: 'Semester 1', subjects: ['FOCSE', 'basic computer eng'] },
+//     { value: '2', label: 'Semester 2', subjects: ['chemistry', 'electrical'] },
+//     { value: '3', label: 'Semester 3', subjects: ['data structures', 'cso', 'dcd', 'discrete structure', 'edc'] },
+//     { value: '4', label: 'Semester 4', subjects: ['ADA', 'ADC', 'Microprocessor', 'TOC'] },
+//     { value: '5', label: 'Semester 5', subjects: ['DBMS', 'OS', 'DC','Cyber Security', 'CGM','Essence of Indian Traditional Knowledge'] },
+//     { value: '6', label: 'Semester 6', subjects: ['ACA', 'CN', 'OOAD','PM','PPL'] },
+//     { value: '7', label: 'Semester 7', subjects: ['Compiler design', 'Information Storage Management', 'IOT', 'Network Security', 'Software Engg'] },
+//     { value: '8', label: 'Semester 8', subjects: ['Network Management', 'Soft Computing', 'Web Engineering'] },
 const subjectData = {
   CSE: {
     '1': {
-      'math1': 'Mathematics I',
-      'phy': 'Physics',
-      'chemistry': 'Chemistry',
+      'FOCSE': 'FOCSE',
+      'basic computer eng': 'basic computer eng'
     },
     '2': {
       'chemistry': 'Chemistry',
@@ -17,29 +24,37 @@ const subjectData = {
       'edc': 'Electric design circuit',
     },
     '4': {
-      'oop': 'Object Oriented Programming',
-      'co': 'Computer Organization',
-      'os': 'Operating Systems',
+      'ADA': 'ADA',
+      'ADC': 'ADC',
+      'Microprocessor': 'Microprocessor',
+      'TOC': 'Theory of Computation',
     },
     '5': {
-      'dbms': 'Database Management Systems',
-      'daa': 'Design and Analysis of Algorithms',
-      'se': 'Software Engineering',
+      'DBMS': 'Database Management Systems',
+      'OS': 'Operating Systems',
+      'DC': 'Digital Circuit  ',
+      'Cyber Security': 'Cyber Security',
+      'CGM': 'Computer Graphics and Multimedia',
+      'Essence of Indian Traditional Knowledge': 'Essence of Indian Traditional Knowledge',
     },
     '6': {
-      'cn': 'Computer Networks',
-      'toc': 'Theory of Computation',
-      'wt': 'Web Technologies',
+      'ACA': 'ACA',
+      'CN': 'Computer Networks',
+      'OOAD': 'OOAD',
+      'PM': 'PM',
+      'PPL': 'PPL',
     },
     '7': {
-      'ml': 'Machine Learning',
-      'cd': 'Compiler Design',
-      'cc': 'Cloud Computing',
+      'Compiler Design': 'Compiler Design',
+      'Information Storage Management': 'Information Storage Management',
+      'IOT': 'IOT',
+      'Network Security': 'Network Security',
+      'Software Engg': 'Software Engineering',
     },
     '8': {
-      'bd': 'Big Data',
-      'cs': 'Cyber Security',
-      'proj': 'Project',
+      'Network Management': 'Network Management',
+      'Soft Computing': 'Soft Computing',
+      'Web Engineering': 'Web Engineering',
     }
   },
   IT: {
