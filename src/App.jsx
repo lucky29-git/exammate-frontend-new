@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { SubjectWiseNotes } from './pages/SubjectWiseNotes';
 import { Pyqs } from './pages/Pyqs';
 import { About } from './pages/About';
+import GetPapers from './pages/getPapers';
 
 
 
@@ -17,6 +18,7 @@ function App() {
          <Route path="/subject-notes" element={<SubjectWiseNotes />} /> 
          <Route path="/pyqs" element={<Pyqs />} /> 
          <Route path="/about" element={<About />} /> 
+         <Route path="/getPapers" element={<GetPapers />} />
 
 
       </Routes>

@@ -2,30 +2,17 @@ import React from 'react'
 import './Card.css'
 import { useNavigate } from 'react-router-dom'
 
-export const Cards = ({ shortForm, fullForm, bgImage, bgColor, to }) => {
+export const Cards = ({ shortForm, fullForm, bgImage, bgColor, branch }) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    if (to) {
-      if (to.startsWith('http')) {
-        window.location.href = to;
-      } else {
-        navigate(to);
-      }
-    }
+    navigate('/getPapers', { state: { branch } });
   };
   return (
-    <div className="card" onClick={handleClick} style={{ cursor: to ? 'pointer' : 'default' }}>
-      <div className="card-inner">
-        {/* Front Side - Short Form */}
-        <div className="card-front" style={{ backgroundColor: `${bgColor}` }}>
-          <h2>{shortForm}</h2>
-        </div>
-
-        {/* Back Side - Full Form with Background Image */}
-        <div className="card-back" style={{ backgroundImage: `url(${bgImage})` }}>
-          <h3>{fullForm}</h3>
-        </div>
+    <div className="card" style={{ backgroundColor: bgColor, backgroundImage: `url(${bgImage})` }} onClick={handleClick}>
+      <div className="card-content flex justify-center items-center">
+        {/* <h2>{shortForm}</h2> */}
+        <p className='text-black text-2xl font-bold'>{fullForm}</p>
       </div>
     </div>
-  )
+  );
 }
