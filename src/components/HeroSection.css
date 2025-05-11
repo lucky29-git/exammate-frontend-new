@@ -26,6 +26,7 @@
     flex-wrap: wrap; /* Allows cards to move to next line */
     gap: 20px;
     justify-content: center;
+    cursor: pointer;
     /* margin-top: 50px; */
   }
   

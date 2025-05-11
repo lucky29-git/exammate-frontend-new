@@ -7,6 +7,8 @@ import { Loader } from '../components/ui/loader';
 import { Pagination, PaginationContent, PaginationItem, PaginationNext, PaginationPrevious } from '../components/ui/pagination';
 import { FileText } from 'lucide-react';
 import subjectData from '../assets/subjectData';
+import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
 const PAGE_SIZE = 10;
 
@@ -53,7 +55,10 @@ const GetPapers = () => {
   const hasMore = papers.length > page * PAGE_SIZE;
 
   return (
-    <div className="min-h-screen w-screen bg-gradient-to-br from-slate-50 to-slate-200 py-8 px-2 flex flex-col items-center">
+    <>
+    <Navbar />
+
+    <div className="min-h-screen w-screen bg-[#decffa] from-slate-50 to-slate-200 py-8 px-2 flex flex-col items-center">
       <div className="w-full flex flex-col items-center">
         <header className="mb-8 text-center w-full">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">Get all PYQ Papers and download them</h2>
@@ -85,7 +90,7 @@ const GetPapers = () => {
                 ))}
               </SelectContent>
             </Select>
-            <Button onClick={handleGetPyq} disabled={!branch || !semester || !subject || loading} className="h-10 px-6 text-base font-semibold">
+            <Button onClick={handleGetPyq} disabled={!branch || !semester || !subject || loading} className="h-10 px-6  font-semibold text-white hover:bg-gray-800 border border-gray-400" variant="custom">
               {loading ? <Loader /> : 'Get PYQ'}
             </Button>
           </div>
@@ -102,7 +107,7 @@ const GetPapers = () => {
                       <span className="font-medium text-lg">{paper.title}</span>
                     </div>
                     <a href={paper.files} target="_blank" rel="noopener noreferrer">
-                      <Button variant="outline" className="font-semibold">Download</Button>
+                      <Button variant="outline" className="font-semibold text-[#2a0e5e] bg-[#decffa]">Download</Button>
                     </a>
                   </li>
                 ))}
@@ -132,6 +137,9 @@ const GetPapers = () => {
         </div>
       </div>
     </div>
+
+    <Footer />
+    </>
   );
 };
 
