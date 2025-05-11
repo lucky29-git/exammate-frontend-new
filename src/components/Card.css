@@ -39,7 +39,7 @@
   .card-back {
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(255, 255, 255);
     transform: rotateY(180deg);
     padding: 10px;
   }

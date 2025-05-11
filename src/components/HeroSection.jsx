@@ -12,7 +12,7 @@ export const HeroSection = () => {
    <h4> No more last-minute stress—study smarter, not harder!</h4>
     </div>
 
-    <div className='cards-container cursor-pointer'>
+    <div className='cards-container'>
       <Cards shortForm="CSE" fullForm="Computer Science & Engineering" bgImage="/img/cse.jpg" bgColor="#007BFF" branch="CSE"/>
       <Cards shortForm="ECE" fullForm="Electronics & Communication Engg" bgImage="/img/ec.jpg" bgColor="#17A2B8" branch="ECE"/>
       <Cards shortForm="IT" fullForm="Information Technology" bgImage="/img/it.jpg" bgColor="#6F42C1" branch="IT"/>

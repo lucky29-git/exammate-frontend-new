@@ -19,8 +19,8 @@ export const Navbar = () => {
       </div>
 
       <div className='loginSignup'>
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button className="px-3 py-2 bg-[#eae3f5] text-gray border-none rounded-[5px] cursor-pointer hover:bg-[#d6c9ea] transition">Login</button>
+        <button className="px-3 py-2 bg-[#eae3f5] text-gray border-none rounded-[5px] cursor-pointer hover:bg-[#d6c9ea] transition ml-2">Sign Up</button>
       </div>
     </section>
   );
