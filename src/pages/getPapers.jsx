@@ -82,7 +82,10 @@ const GetPapers = () => {
             </Select>
             <Select value={subject} onValueChange={setSubject} disabled={!semester}>
               <SelectTrigger className="w-60">
-                <SelectValue placeholder="Select Subject" />
+                <SelectValue
+                  placeholder="Select Subject"
+                  children={subject ? subjects[subject] : "Select Subject"}
+                />
               </SelectTrigger>
               <SelectContent>
                 {Object.entries(subjects).map(([subjKey, subjFull]) => (
