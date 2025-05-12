@@ -8,8 +8,8 @@
 }
 
 .navbar .logo{
-    height: 7vh;
-    width: 15vw;
+    height: 18vh;
+    width: 18vw;
     margin: 0;
 }
 
@@ -19,6 +19,9 @@
 }
 
 .navbar .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     place-content: center;
     width: 38vw;
 }
